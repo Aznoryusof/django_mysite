@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning API</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+    crossorigin="anonymous">
+</head>
+<body>
+{% load static %}
+{% load crispy_forms_tags %}
+    <div class = "mx-2 my-0">
+        <div class="container-fluid">
+            <div class="row" style="background-color:#000000; height:80px" ><br></div>
+            </div>
+            <div class="row">
+                <div class= "col"></div>
+                <div class = "col-6 my-5">
+                    <h1>Small Loans Form</h1><br>
+                    <p>Banks around the world receive massive amounts of applications
+                        each day for loans. Some of these loans are defaulted, costing
+                        banks to lose money, and is an inefficient use of limited credit
+                        in the economy. Therefore, there is a need to find a better way
+                        to differentiate between loans that are likely to be repayed
+                        and those that would not. <br><br>
+
+                        This form uses a machine learning model trained on historical data 
+                        on default rates to predict if an applicant is predicted to have a 
+                        high risk of default.
+
+                        Fill in the information in the fields, and click <strong>submit</strong>,
+                         to test how it works.
+                    </p>
+                    <form method='post'>	
+                        {% csrf_token %}
+                        {{form|crispy}}
+                        <br>
+                        <button type='submit' class="btn btn-primary">Submit</button>
+                    </form>
+                    <br>
+                </div>
+                <div class="col">
+                    <div class = "mt-5">
+                        <h4>
+                        {% if messages %}
+                        <ul class="messages">
+                        {% for message in messages %}
+                        <div  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> 
+                        {{ message }} </div>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
