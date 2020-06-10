@@ -524,11 +524,11 @@ h6 {
 }
 
 .gallery-text h2 {
-    color: #ffffff;
-    font-size: 16px;
+    color: #0000FF;
+    font-size: 22px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .portfolio-mini-desc p {
