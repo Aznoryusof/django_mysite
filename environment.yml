@@ -139,7 +139,6 @@ dependencies:
     - imbalanced-learn==0.6.2
     - psycopg2-binary==2.8.3
     - scikit-learn==0.23.1
-    - sklearn==0.0
     - threadpoolctl==2.1.0
 prefix: C:\Users\aznor\Anaconda3\envs\django_loan
 
