@@ -7,7 +7,7 @@ import re
 import pandas as pd
 
 from keras.models import load_model
-from src.predictor.prepare_data import get_test_dummies
+from src.loan_predictor.prepare_data import get_test_dummies
 
 
 def _get_latest_model(list):
@@ -59,17 +59,17 @@ def _prediction(model, data, threshold=0.5):
 
 
 def make_prediction(mydata):
-    model_path = BASE_DIR + "/results/model_file/"
+    model_path = BASE_DIR + "/results/loan_predictor/model_file/"
     files = [f for f in os.listdir(model_path) if f.endswith('.h5')]
     latest_model_name = _get_latest_model(files)
     model = load_model(model_path + latest_model_name)
 
-    scaler_path = BASE_DIR + "/results/model_scaler/"
+    scaler_path = BASE_DIR + "/results/loan_predictor/model_scaler/"
     files = [f for f in os.listdir(scaler_path) if f.endswith('.save')]
     latest_scaler_name = _get_latest_scaler(files)
     scaler = joblib.load(scaler_path + latest_scaler_name) 
 
-    features_path = BASE_DIR + "/results/model_features/"
+    features_path = BASE_DIR + "/results/loan_predictor/model_features/"
     files = [f for f in os.listdir(features_path) if f.endswith('.csv')]
     latest_features_name = _get_latest_features(files)
     features = pd.read_csv(features_path + latest_features_name)

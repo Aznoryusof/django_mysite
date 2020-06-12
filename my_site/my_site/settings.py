@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'resume',
     'rest_framework',
-    'my_api',
+    'api_loan',
     'crispy_forms',
 ]
 
