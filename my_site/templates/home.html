@@ -29,7 +29,6 @@
                         <div class="line"></div>
                         <h4>{{ about.short_description }}</h4>
                         <p>{{ about.description }}</p>
-                        {# <a href="images/about/cv.jpg" download>Download CV&nbsp;<i class="fa fa-download"></i></a> #}
                         <a href="{{ about.cv.url }}" download>Download CV&nbsp;<i class="fa fa-download"></i></a>
                     </div>
                 </div>
@@ -80,7 +79,7 @@
                 {% for work in works %}
                     <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
                         <div class="gallery-items">
-                            <a class="view img" href="{{ work.image.url }}">
+                            <a class="link to another api page" href="{% url 'api_loan:cxform' %}">
                                 <img src="{{ work.image.url }}" alt="work image">
                             </a>
                             <div class="gallery-text">
