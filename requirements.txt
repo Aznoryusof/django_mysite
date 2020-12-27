@@ -73,7 +73,7 @@ sip==4.19.13
 six==1.12.0
 sqlparse==0.3.0
 tensorboard==1.14.0
-tensorflow==1.14.0
+tensorflow==2.4.0
 tensorflow-estimator==1.14.0
 termcolor==1.1.0
 terminado==0.8.3
