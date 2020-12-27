@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'xjii=qqhup&skdy=z^cl8vedcn%%#z$s!!-fgm_)-m19jp4o=3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '178.128.92.230']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -137,3 +137,5 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.FormParser',
     )
 }
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
