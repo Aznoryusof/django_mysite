@@ -1,0 +1,9 @@
+seed: 0
+test_ratio: 0.3
+model:
+  batch_size: 20
+  epochs: 50
+  dense_1: 300
+  dense_2: 500
+  dense_3: 4
+  dense_4: 1
