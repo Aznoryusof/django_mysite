@@ -2,7 +2,7 @@ Django>=2.2
 django-crispy-forms==1.7.2
 djangorestframework==3.10.2
 gunicorn>=19.9.0
-Jinja2?=2.11.2
+Jinja2>=2.11.2
 joblib
 Keras>=2.2.4
 nbconvert>=5.6.1
