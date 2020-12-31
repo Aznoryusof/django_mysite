@@ -25,9 +25,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['localhost', '178.128.92.230', 'www.aznoryusof.com', 'aznoryusof.com']
+ALLOWED_HOSTS = ['localhost', '178.128.92.230', 'www.aznoryusof.com', 'aznoryusof.com', '127.0.0.1']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 

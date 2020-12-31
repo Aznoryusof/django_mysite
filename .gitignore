@@ -133,3 +133,9 @@ data/
 
 # Ignore results files
 results/
+
+# Ignore private files
+my_site/settings.ini
+
+# Ignore old files
+deprecated/
