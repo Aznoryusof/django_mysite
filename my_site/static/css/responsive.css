@@ -50,7 +50,7 @@
         padding-top: 20px;
     }
     .welcome-text {
-        padding-top: 70px;
+        padding-top: 190px;
     }
     .welcome-text .name-area {
         font-size: 17px;
@@ -148,7 +148,7 @@
         padding-top: 20px;
     }
     .welcome-text {
-        padding-top: 60px;
+        padding-top: 190px;
     }
     .welcome-text .name-area {
         font-size: 17px;
@@ -223,7 +223,7 @@
 @media screen and (min-width: 600px)and (max-width: 767px){
 
     .welcome-text {
-        padding-top: 100px;
+        padding-top: 190px;
     }
 
 }
