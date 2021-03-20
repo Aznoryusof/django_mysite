@@ -1,6 +1,6 @@
 Django>=2.2
 django-crispy-forms==1.7.2
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 entrypoints==0.3
 gast==0.2.2
 google-pasta==0.1.7
